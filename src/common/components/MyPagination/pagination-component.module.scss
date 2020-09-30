@@ -1,0 +1,18 @@
+.active-page {
+    color: rgb(172, 172, 172);
+}
+
+.page-number {
+    padding: 0 0.1rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.3rem;
+}
+
+.page-number:hover {
+    color: rgb(133, 133, 133);
+}

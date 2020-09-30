@@ -1,0 +1,54 @@
+.my-button {
+    padding: 0.5rem;
+    border-radius: 10%;
+    border: 1px solid lightslategrey;
+    background: lightgreen;
+}
+
+.my-chbx-container {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    position: relative;
+
+    input {
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    span {
+        position: absolute;
+        background: rgb(236, 236, 236);
+        height: 19px;
+        width: 19px !important;
+        top: 0;
+        left: 0;
+        border-radius: 25%;
+        cursor: pointer;
+    }
+
+    span:hover {
+        background: rgb(255, 255, 255);
+    }
+
+    input:checked ~ span {
+        background: rgb(255, 255, 255);
+    }
+
+    span:after {
+        display: none;
+        content: '';
+        background: rgb(99, 190, 134);
+        height: 11px;
+        width: 11px;
+        border-radius: 25%;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+
+    input:checked ~ span:after {
+        display: block;
+    }
+}

@@ -1,0 +1,41 @@
+@import "src/common/styles/buttons.scss";
+
+.todo {
+    padding: 1rem;
+    background: lightgray;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0;
+
+    span, input {
+        width: 80%;
+    }
+
+    .buttons-block {
+        display: flex;
+        align-items: center;
+        width: 20%;
+        justify-content: space-around;
+
+        .del-button {
+            color: rgb(236, 236, 236);
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .del-button:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.completed {
+    background: lightblue;
+}
+
+.incompleted {
+    background: lightsalmon;
+}

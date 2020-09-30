@@ -1,0 +1,49 @@
+.custom-select-container {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: inherit;
+
+    .selected-option {
+        padding: 0.5rem;
+    }
+
+    .current-option-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+    }
+
+    .options {
+        position: absolute;
+        background: white;
+        width: inherit;
+        background: mediumaquamarine;
+
+        .current-option {
+            padding: 0.3rem;
+            display: flex;
+            flex-direction: column;
+    
+            .my-select-option {
+                transition: 0.1s;
+                padding: 0.3rem 0.2rem;
+                border-radius: 5px;
+            }
+    
+            .my-select-option:hover {
+                background: rgb(237, 241, 243);
+                transition: 0.1s;
+            }
+    
+            .my-select-option:active {
+                background: rgb(196, 201, 204);
+                transition: 0.1s;
+            }
+        }
+    }
+
+}
